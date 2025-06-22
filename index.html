@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Capture caméra arrière</title>
-  <meta name="theme-color" content="#000000"> <!-- Barre d'adresse noire sur mobile -->
+  <meta name="theme-color" content="#000000"> <!-- Barre d'adresse noire -->
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       background: black;
       width: 100vw;
       height: 100vh;
       overflow: hidden;
       touch-action: manipulation;
     }
+
+    body {
+      background: url('https://d35v9wsdymy32b.cloudfront.net/v1/images/yRIzzUBZgbVPtG-8XDdjXrdl.png') no-repeat center center;
+      background-size: cover;
+    }
+
     #video {
       display: none;
     }
+
     #loading {
       color: white;
       font-family: sans-serif;
@@ -24,6 +32,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 18px;
+      background: rgba(0,0,0,0.5);
+      padding: 1em 2em;
+      border-radius: 10px;
     }
   </style>
 </head>
